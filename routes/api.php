@@ -14,3 +14,4 @@ use Illuminate\Http\Request;
 */
 
 Route::get('rehabilitasi','Api\NarkobaController@rehabilitasi');
+Route::get('narkotika','Api\NarkobaController@narkotika');
