@@ -15,7 +15,7 @@ class RehabilitasiController extends Controller
     public function index()
     {
      $rehabilitasi= Rehabilitasi::all();
-     return view('pages.rehabilitasi.idx_rehabilitasi', compact('rehabilitasi'));
+     return view('pages.Rehabilitasi.idx_rehabilitasi', compact('rehabilitasi'));
     }
 
     /**
@@ -25,7 +25,7 @@ class RehabilitasiController extends Controller
      */
     public function create()
     {
-      return view('pages.rehabilitasi.tambahkan');
+      return view('pages.Rehabilitasi.tambahkan');
     }
 
     /**
@@ -71,7 +71,7 @@ class RehabilitasiController extends Controller
     public function edit($id)
     {
         $rehabilitasi = Rehabilitasi::find($id);
-        return view ('pages.rehabilitasi.ubah', compact('rehabilitasi'));
+        return view ('pages.Rehabilitasi.ubah', compact('rehabilitasi'));
     }
 
     /**
